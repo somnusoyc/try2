@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公司名称 - 首页</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://download.dingtalk.com/dingtalk-desktop/static/dtfont/dingtalk_jinbu.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo/logo.png" alt="小小神经元标志">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">中心介绍</a></li>
+                <li><a href="#services">课程及教室</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-slogan">小小神经元，陪伴每一个孩子及家庭快乐成长</h1>
+                <div class="hero-main">
+                    <div class="hero-image">
+                        <img src="logo/1.png" alt="小小神经元介绍图片">
+                    </div>
+                    <div class="hero-text">
+                        <p>小小神经元于2018年成立于美国哈佛大学，依托于哈佛大学创新实验室，研发了针对谱系患儿的首款家庭干预产品。2019年，小小神经元创始团队回到杭州，成立小小神经元(杭州)医疗科技有限公司。</p>
+                        <p>在全球医疗资源的负能下，厚积薄发的打磨出适合中国家庭使用的系列干预产品。5年来,已经服务累计超过4000个来自全国各地的家庭。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ai-chat" class="ai-chat">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h2>小小神经元专属咨询师</h2>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message system">
+                        <div class="message-avatar">
+                            <img src="logo/ai头像.png" alt="AI助手头像">
+                        </div>
+                        <div class="message-content">
+                            您好！我是小小神经元AI助手，很高兴为您服务。请问有什么可以帮您？
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <textarea 
+                        id="user-input" 
+                        placeholder="请输入您的问题..." 
+                        rows="1"
+                        onInput="this.style.height = 'auto'; this.style.height = this.scrollHeight + 'px'"
+                    ></textarea>
+                    <button id="send-button">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>早期干预与实践中心介绍</h2>
+            <div class="about-content">
+                <div class="about-intro">
+                    <p>2021年，小小神经元早期干预研究与实践中心成立。秉持"小而精、专而强"的理念，小小线下中心旨在帮助每一位有特殊需求的孩子提升核心技能，缓解核心症状，激发其自主学习及生活的潜能。</p>
+                </div>
+                
+                <div class="about-features">
+                    <div class="feature">
+                        <h3>顶尖师资团队配置</h3>
+                        <p>中心一线执教团队由心理学、教育学、特殊教育学等相关领域<strong>硕士及以上</strong>学历的专家组成。他们具备扎实的专业知识和丰富的实践经验，能够为每一位孩子提供专业、高效的干预支持。</p>
+                    </div>
+                    <div class="feature">
+                        <h3>高师生比个性化干预</h3>
+                        <p>每位执教老师在同时期<strong>最多只接纳两个</strong>个案，确保有足够的精力和时间密切跟踪每个个案的进展情况，为每个孩子量身定制个性化的干预方案。</p>
+                    </div>
+                    <div class="feature">
+                        <h3>家长支持全方位干预</h3>
+                        <p>中心不仅直接针对患儿进行干预，还高度重视<strong>帮助家长</strong>。通过高频率的培训和指导，帮助家长更好地理解和支持孩子的发展，确保干预工作全面、深入地开展。</p>
+                    </div>
+                    <div class="feature">
+                        <h3>临床效果显著改善</h3>
+                        <p>自2021年成立以来，已有<strong>80%以上</strong>接受干预服务的患儿经过<strong>ADOS-2</strong>评估后，显示出评估分数下降的趋势。这一显著成果充分证明了我们在早期干预领域的专业性和有效性。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>课程及教室</h2>
+            <div class="gallery-container">
+                <div class="gallery-section">
+                    <h3>特色课程</h3>
+                    <div class="slideshow-container course-slideshow">
+                        <div class="slides">
+                            <img src="./imgs2/1.jpg" alt="课程照片1">
+                            <img src="./imgs2/2.jpg" alt="课程照片2">
+                            <img src="./imgs2/3.jpg" alt="课程照片3">
+                            <img src="./imgs2/4.jpg" alt="课程照片4">
+                        </div>
+                        <div class="slide-dots"></div>
+                    </div>
+                </div>
+                
+                <div class="gallery-section">
+                    <h3>教室环境</h3>
+                    <div class="slideshow-container classroom-slideshow">
+                        <div class="slides">
+                            <img src="./imgs/1.jpg" alt="教室照片1">
+                            <img src="./imgs/2.jpg" alt="教室照片2">
+                            <img src="./imgs/3.jpg" alt="教室照片3">
+                        </div>
+                        <div class="slide-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>联系我们</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="您的姓名" required>
+                <input type="email" placeholder="电子邮箱" required>
+                <textarea placeholder="请输入您的留言" required></textarea>
+                <button type="submit">发送</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 公司名称. 版权所有.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
